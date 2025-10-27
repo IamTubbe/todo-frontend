@@ -13,12 +13,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #a855f7, #ec4899);
+  background: linear-gradient(to bottom, #a855f7, #ec4899); /* อาจจะเปลี่ยนสีตรงนี้ด้วยก็ได้ ถ้าต้องการ */
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #9333ea, #db2777);
+  background: linear-gradient(to bottom, #9333ea, #db2777); /* อาจจะเปลี่ยนสีตรงนี้ด้วยก็ได้ ถ้าต้องการ */
 }
 
 /* Smooth Transitions */
@@ -48,9 +48,4 @@ textarea:focus {
   50% {
     transform: translateY(-10px);
   }
-}
-
-/* เปลี่ยนจาก purple-pink เป็น blue-green (เพิ่มส่วนนี้เข้ามา) */
-.bg-gradient-to-r.from-purple-600.to-pink-600 {
-  background: linear-gradient(to right, #0ea5e9, #10b981);
 }
