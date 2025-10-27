@@ -13,12 +13,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #a855f7, #ec4899); /* อาจจะเปลี่ยนสีตรงนี้ด้วยก็ได้ ถ้าต้องการ */
+  background: linear-gradient(to bottom, #a855f7, #ec4899); /* คุณอาจจะเปลี่ยนสี Scrollbar ตรงนี้ด้วยก็ได้ */
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #9333ea, #db2777); /* อาจจะเปลี่ยนสีตรงนี้ด้วยก็ได้ ถ้าต้องการ */
+  background: linear-gradient(to bottom, #9333ea, #db2777); /* คุณอาจจะเปลี่ยนสี Scrollbar ตรงนี้ด้วยก็ได้ */
 }
 
 /* Smooth Transitions */

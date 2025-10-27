@@ -38,7 +38,8 @@ export default function AddTodo({ onAdd, loading }) {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl p-6 mb-8 border-2 border-purple-100"> {/* ← อาจจะแก้สี border ตรงนี้ด้วย */}
+    // คุณอาจจะเปลี่ยนสี border หรือ focus ของ input/textarea ให้เข้ากับธีมใหม่ด้วยก็ได้
+    <div className="bg-white rounded-2xl shadow-xl p-6 mb-8 border-2 border-purple-100">
       <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
         <span className="text-3xl">➕</span>
         Add New Task
@@ -64,9 +65,9 @@ export default function AddTodo({ onAdd, loading }) {
               setTitle(e.target.value);
             }}
             placeholder="What do you need to do?"
-            className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-purple-500
-                     focus:ring-4 focus:ring-purple-100 outline-none transition text-gray-800
-                     placeholder-gray-400 disabled:bg-gray-100 disabled:cursor-not-allowed" // ← อาจจะแก้สี focus ตรงนี้
+            className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-sky-500 /* แก้ไข */
+                     focus:ring-4 focus:ring-sky-100 /* แก้ไข */ outline-none transition text-gray-800
+                     placeholder-gray-400 disabled:bg-gray-100 disabled:cursor-not-allowed"
             disabled={submitting || loading}
             autoFocus
           />
@@ -82,9 +83,9 @@ export default function AddTodo({ onAdd, loading }) {
             onChange={(e) => setDescription(e.target.value)}
             placeholder="Add more details..."
             rows="3"
-            className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-purple-500
-                     focus:ring-4 focus:ring-purple-100 outline-none transition resize-none text-gray-800
-                     placeholder-gray-400 disabled:bg-gray-100 disabled:cursor-not-allowed" // ← อาจจะแก้สี focus ตรงนี้
+            className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-sky-500 /* แก้ไข */
+                     focus:ring-4 focus:ring-sky-100 /* แก้ไข */ outline-none transition resize-none text-gray-800
+                     placeholder-gray-400 disabled:bg-gray-100 disabled:cursor-not-allowed"
             disabled={submitting || loading}
           />
         </div>

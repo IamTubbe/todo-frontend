@@ -72,13 +72,13 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-100 via-pink-50 to-blue-100 py-8 px-4"> {/* ← อาจจะแก้สีพื้นหลังตรงนี้ด้วยก็ได้ */}
+    <div className="min-h-screen bg-gradient-to-br from-sky-100 via-teal-50 to-emerald-100 py-8 px-4"> {/* ตัวอย่างแก้สีพื้นหลัง */}
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-3 mb-3">
             <div className="text-5xl animate-bounce">✨</div>
-            {/* --- 👇 แก้ไขสี Gradient ตรงนี้ 👇 --- */}
+            {/* --- 👇 แก้ไข className ของ h1 ตรงนี้ 👇 --- */}
             <h1 className="text-5xl font-bold bg-gradient-to-r from-sky-500 to-emerald-500 bg-clip-text text-transparent">
               My Todo List
             </h1>
@@ -121,7 +121,7 @@ export default function Home() {
           </div>
         )}
 
-        {/* Add Todo Form */}
+        {/* Add Todo Form (อย่าลืมแก้สีปุ่มใน AddTodo.jsx ด้วยนะครับ) */}
         <AddTodo onAdd={handleAdd} loading={loading} />
 
         {/* Statistics */}
