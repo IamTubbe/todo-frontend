@@ -49,3 +49,8 @@ textarea:focus {
     transform: translateY(-10px);
   }
 }
+
+/* เปลี่ยนจาก purple-pink เป็น blue-green (เพิ่มส่วนนี้เข้ามา) */
+.bg-gradient-to-r.from-purple-600.to-pink-600 {
+  background: linear-gradient(to right, #0ea5e9, #10b981);
+}
